@@ -1,0 +1,148 @@
+@import "../../../../styles/abstract/mixins";
+@import "../../../../styles/abstract/variables";
+
+.box {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 114px 1rem 128px 1rem;
+
+    @include mq(md) {
+        padding: 256px 1rem 64px 1rem;
+    }
+
+    article h1 {
+        font-size: 32px;
+        font-weight: 400;
+        max-width: 746px;
+        text-align: center;
+        max-width: 317px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        @include mq(sm) {
+            max-width: 476px;
+            font-size: 48px;
+            margin-bottom: 48px;
+        }
+
+        @include mq(md) {
+            max-width: 744px;
+            font-size: 64px;
+            margin-bottom: 96px;
+        }
+
+        @include psuedo($content: "You matter.") {
+            top: -1rem;
+            font-size: 48px;
+            font-weight: 700;
+            color: rgba(black, 0.08);
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include mq(sm) {
+                top: -1.5rem;
+                font-size: 64px;
+            }
+
+            @include mq(md) {
+                top: -2.5rem;
+                font-size: 96px;
+            }
+        }
+    }
+
+    &>section {
+        margin: 0 auto;
+        margin-bottom: 64px;
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+    }
+
+    div {
+        @include center();
+
+        button {
+            @include mq(md) {
+                width: 50%;
+                height: 54px;
+
+                background-color: $secondary-color;
+                color: $accent-color;
+
+                &:hover {
+                    background-color: darken($secondary-color, 10%);
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                    background-color: lighten($secondary-color, 20%);
+                    transition: all 0.1s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+.card {
+    height: 200px;
+    max-width: 395px;
+
+    h2 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 36px;
+    }
+
+    p {
+        line-height: 170.1%;
+    }
+}
+
+.vision,
+.mission {
+
+    section {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+
+        @media (min-width: 600px) and (max-width:900px) {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            article:first-of-type {
+                flex: 1;
+            }
+
+            article:last-of-type {
+                flex: 1;
+            }
+        }
+
+
+        article:last-of-type {
+            padding: 1rem 1rem;
+            @extend .card;
+        }
+
+    }
+}
+
+.vision section {
+    background-color: $blue0;
+}
+
+.mission section {
+    background-color: $primary-color;
+}

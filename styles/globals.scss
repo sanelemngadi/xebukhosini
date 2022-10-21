@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&family=Inter:wght@300;400;700&display=swap');
+@import "abstract/variables";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font-primary;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+p,
+a,
+label {
+  font-family: $font-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+article,
+section,
+video {
+  display: block;
+}
+
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }

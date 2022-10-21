@@ -1,0 +1,18 @@
+$primary-color: #D2E8BA;
+$secondary-color: #9ACD32;
+$accent-color: #000080;
+$blue0: #BCC4ED;
+
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Cormorant', serif;
+
+$breakpoints: (
+    sm: 600px,
+    md: 900px,
+    lg: 1200px
+);
+
+
+:export {
+    primaryColor: $primary-color;
+}

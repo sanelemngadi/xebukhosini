@@ -1,0 +1,29 @@
+@import "variables";
+
+@mixin center($dir: row) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $dir;
+}
+
+;
+
+@mixin mq($point) {
+    $size: map-get($breakpoints , $point );
+
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin psuedo($side: before, $content: "", $pos: absolute, $t: 0, $b: 0, $l: 0, $r: 0) {
+    position: relative;
+
+    &::#{$side} {
+        content: $content;
+        position: $pos;
+        display: block;
+        @content;
+    }
+}

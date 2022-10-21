@@ -1,0 +1,47 @@
+@import "../../../../styles/abstract/mixins";
+@import "../../../../styles/abstract/variables";
+
+.hero {
+    min-height: calc(100vh - 80px);
+    background-color: $blue0;
+    overflow: hidden;
+    padding: 0 1rem;
+
+    section {
+        @include center(column);
+        min-height: calc(100vh - 80px);
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        p {
+            font-size: 20px;
+            color: $accent-color;
+            text-transform: uppercase;
+            font-family: $font-secondary;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-family: $font-secondary;
+            font-weight: 400 !important;
+            max-width: 645px;
+            text-align: center;
+            margin-bottom: 148px;
+            margin-top: 16px;
+        }
+
+        @include mq(md) {
+            p {
+                font-size: 24px; //
+            }
+
+            h1 {
+                font-size: 64px;
+                margin-bottom: 89px;
+                margin-top: 16px;
+            }
+        }
+    }
+}

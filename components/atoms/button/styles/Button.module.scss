@@ -1,0 +1,33 @@
+@import "../../../../styles//abstract/mixins";
+
+.button {
+    border: 1px solid transparent;
+    height: 56px;
+    padding: 0 2rem;
+    width: 80%;
+    background-color: $accent-color;
+    color: $primary-color;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+        background-color: darken($accent-color, 10%);
+    }
+
+    &:active {
+        transform: scale(0.98);
+        background-color: lighten($accent-color, 20%);
+        transition: all 0.1s ease-in-out;
+    }
+
+    @include mq(sm) {
+        height: 66px;
+        width: 60%;
+    }
+
+    @include mq(md) {
+        width: 30%;
+    }
+}

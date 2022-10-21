@@ -1,0 +1,109 @@
+@import "../../../../styles/abstract/mixins";
+@import "../../../../styles/abstract/variables";
+
+.box {
+    min-height: 100vh;
+    padding: 54px 1rem 26px 1rem;
+
+    @include mq(md) {
+        padding: 209px 1rem 309px 1rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include mq(sm) {
+        display: flex;
+    }
+
+    article:first-of-type {
+        @include center();
+        flex: 2;
+        position: relative;
+        min-height: 416px;
+        min-width: 383px;
+    }
+
+    article:last-of-type {
+        flex: 3;
+        max-width: 650px;
+
+        @include mq(sm) {
+            padding: 0 2rem;
+        }
+    }
+
+    article {
+        h1 {
+            font-size: 32px;
+            margin-top: 64px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 39px;
+
+            @include psuedo($content: "You are not Alone") {
+                color: rgba(black, 0.08);
+                font-size: 32px;
+                font-weight: 700;
+                font-family: inherit;
+                top: -1rem;
+                width: 100%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 207.1%;
+            color: #858585;
+            text-align: center;
+        }
+
+        @include mq(sm) {
+            h1 {
+                font-size: 36px; //
+                text-align: left; //
+                margin-bottom: 24px; //
+                margin-top: 24px;
+
+                @include psuedo($content: "You are not Alone") {
+                    color: rgba(black, 0.08);
+                    font-size: 64px; //
+                }
+            }
+
+            p {
+                text-align: left; //
+                margin-bottom: 16px; //
+            }
+
+            div button {
+                width: 80%;
+                height: 54px;
+                background-color: $secondary-color;
+                color: $accent-color;
+
+                &:hover {
+                    background-color: darken($secondary-color, 10%);
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                    background-color: lighten($secondary-color, 20%);
+                    transition: all 0.1s ease-in-out;
+                }
+            }
+        }
+    }
+
+    div {
+        @include center();
+        margin-top: 24px;
+
+        @include mq(sm) {
+            justify-content: flex-start;
+        }
+    }
+}
