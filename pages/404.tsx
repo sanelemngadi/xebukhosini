@@ -6,7 +6,7 @@ const Error = () => {
         <div className={styles.errorPage}>
             <section>
                 <h1>404</h1>
-                <p>This page could not be found</p>
+                <p>This page could not be found.</p>
             </section>
         </div>
     )
