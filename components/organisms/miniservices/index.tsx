@@ -17,11 +17,11 @@ const MiniServices = () => {
                     <ul>
                         {services.map((service, idx) => (
                             <li key={`service-` + idx}>
-                                {service}
+                                &nbsp; &nbsp; &nbsp; ✓ {service}
                             </li>
                         ))}
                     </ul>
-                    <div><Button style={{ width: "50%", height: "54px", marginTop: "24px" }}>Read more services</Button></div>
+                    <div><Button style={{ width: "80%", height: "54px", marginTop: "24px" }}>Read more services</Button></div>
                 </article>
             </section>
         </div>

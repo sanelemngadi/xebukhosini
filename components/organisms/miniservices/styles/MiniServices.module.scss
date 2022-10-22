@@ -2,10 +2,19 @@
 @import "../../../../styles//abstract/variables";
 
 .box {
-    min-height: 100vh;
+    // min-height: 100vh;
     // border: 1px solid black;
     background-color: $primary-color;
-    padding: 128px 1rem;
+    padding: 64px 1rem;
+    margin-top: 32px;
+
+    @include mq(sm) {
+        padding: 96px 1rem;
+    }
+
+    @include mq(md) {
+        padding: 128px 1rem;
+    }
 }
 
 .container {
@@ -35,6 +44,10 @@
         @include mq(md) {
             padding: 0 4rem;
         }
+
+        div {
+            @include center();
+        }
     }
 
     article {
@@ -60,9 +73,13 @@
 
             li {
                 color: #565656;
-                padding: 1rem;
+                padding: 0.8rem;
                 list-style: none;
                 font-size: 16px;
+
+                @include mq(sm) {
+                    padding: 1rem;
+                }
             }
         }
 

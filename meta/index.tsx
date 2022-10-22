@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React, { FC } from 'react';
 
 interface Props {
-    title: string
+    title: string,
     subtitle: string,
     image: string,
     path?: string
@@ -34,4 +34,4 @@ const MetaData: FC<Props> = ({ title, subtitle, image, path }) => {
     )
 }
 
-export default MetaData
+export default MetaData;

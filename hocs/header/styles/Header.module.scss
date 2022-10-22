@@ -35,40 +35,42 @@
 
         .nav {
             display: block;
-            width: 100%;
-            min-height: calc(100vh - 80px);
+            // width: 100%;
+            // min-height: calc(100vh - 80px);
             position: absolute;
             top: 80px;
-            left: 0;
-            padding: 1rem;
-            @include center();
-            background-color: rgba($accent-color, 0.9);
+            right: 1rem;
+            // padding: 1rem;
+            // @include center();
+            // background-color: rgba($accent-color, 0.9);
             z-index: 4;
             transform: translateX(150%);
             transition: all 0.5s ease-out;
 
             ul {
-                width: 100%;
+                // width: 100%;
+                display: flex;
 
                 li {
                     list-style: none;
 
                     a {
                         @include center();
-                        width: 100%;
+                        // width: 100%;
                         height: 100%;
                         padding: 1rem;
 
-                        font-size: 64px;
+                        font-size: 16px;
+                        // font-size: 64px;
                         font-weight: 400;
-                        color: $primary-color;
+                        // color: $primary-color;
+                        color: $accent-color;
 
                         &:hover {
                             color: $secondary-color;
 
                             @include mq(md) {
                                 color: $accent-color;
-                                // font-weight: 700;
                             }
                         }
                     }

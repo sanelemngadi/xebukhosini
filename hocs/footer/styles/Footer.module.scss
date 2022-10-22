@@ -1,0 +1,87 @@
+@import "../../../styles/abstract/mixins";
+@import "../../../styles/abstract/variables";
+
+.box {
+    background-color: #F4F5F7;
+    z-index: 2;
+    margin-top: 0px;
+
+    @include mq(md) {
+        margin-top: 96px;
+    }
+
+    div:last-of-type {
+        max-width: 700px;
+        margin-left: auto;
+        border-top: 1px solid rgba(blue, 0.5);
+        padding: 1rem;
+
+        p {
+            text-align: left;
+            font-size: 14px;
+            color: rgba(black, .5);
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    @include mq(sm) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include psuedo($content: "Contact Me", $side: before) {
+        font-size: 54px;
+        font-family: $font-secondary;
+        font-weight: 700;
+        color: rgba(black, 0.08);
+        top: -3rem;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin: 2rem 0 1rem;
+    }
+
+    p,
+    a {
+        font-size: 16px;
+        margin: .5rem 0;
+
+        @include mq(sm) {
+            margin: 1rem 0;
+        }
+
+        @include mq(md) {
+            margin: 1.5rem 0;
+        }
+    }
+
+    ul li {
+        list-style: none;
+
+        a {
+            text-decoration: underline;
+            display: inline-block;
+
+            @include mq(md) {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+
+}
