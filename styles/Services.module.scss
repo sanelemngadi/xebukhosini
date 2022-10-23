@@ -1,0 +1,156 @@
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+.box {
+    min-height: 100vh;
+    padding-bottom: 96px;
+    border: 1px solid blue($color: #000000);
+
+    span p {
+        font-size: 48px;
+        font-family: $font-secondary;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.hero {
+    background-color: $blue0;
+    height: calc(100vh * (9/16));
+    padding: 1rem;
+    margin-bottom: 64px;
+    @include center();
+    flex-direction: column;
+    margin-top: -2px;
+
+    h1 {
+        font-size: 32px;
+        max-width: 780px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 400;
+
+        @include mq(sm) {
+            font-size: 48px;
+        }
+    }
+
+    div {
+        display: flex;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 96px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    // @include center();
+
+    l &>div {
+        margin: 3rem 0;
+    }
+
+    .service1 {
+        display: flex;
+        gap: 1rem;
+        @include center(column);
+
+        @include mq(xs) {
+            @include center(row);
+            margin-top: 32px
+        }
+
+        @include mq(sm) {
+            margin-top: 64px;
+        }
+
+        @include mq(md) {
+            margin-top: 128px;
+        }
+
+        .serviceThemeCard {
+            // display: none;
+            background-color: #D9D9D9;
+            font-size: 20px;
+            font-family: $font-primary;
+            @include center();
+
+            @include mq(xs) {
+                display: none;
+            }
+
+            @include mq(md) {
+                display: block;
+                @include center();
+            }
+        }
+    }
+
+    .serviceCards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .serviceCard {
+        width: 100%;
+        background-color: #F4F5F7;
+        border-radius: 8px;
+        @include center();
+        padding: 18px;
+
+        @media (min-width: 378px) {
+            min-height: 261px;
+            max-width: 377px;
+        }
+
+        &>section {
+            article {
+                height: 64px;
+                width: 64px;
+                background-color: #D9D9D9;
+                border-radius: 50%;
+                margin-bottom: 24px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-family: $font-primary;
+                color: #5F3D73;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 144.6%;
+                color: #666666;
+            }
+        }
+    }
+
+    .serviceImage,
+    .serviceThemeCard {
+        width: 380px;
+        height: 283px;
+        background-color: black;
+
+        // flex: 1;
+        @include mq(md) {
+            height: 536px;
+            display: block;
+        }
+    }
+
+
+
+    // .serviceImage{}
+    // .serviceThemeCard{}
+}

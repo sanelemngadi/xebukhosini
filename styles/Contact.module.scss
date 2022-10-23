@@ -20,6 +20,7 @@
     margin-bottom: 64px;
     @include center();
     flex-direction: column;
+    margin-top: -2px;
 
     h1 {
         font-size: 32px;
@@ -101,46 +102,6 @@
                 @include mq(sm) {
                     background-color: $blue0;
                     padding: 1rem;
-                }
-
-                input,
-                label {
-                    display: block;
-                }
-
-                select,
-                option,
-                label,
-                textarea,
-                input {
-                    font-family: $font-primary;
-                    font-size: 16px;
-                }
-
-                label {
-                    margin-top: 1rem;
-                    margin-bottom: .3rem;
-                    @include ssrOnly();
-                }
-
-                select {
-                    width: 100%;
-                    height: 54px;
-                    padding: 0 1rem;
-                    margin-bottom: 1rem;
-                }
-
-
-                textarea {
-                    width: 100%;
-                    margin-bottom: 1rem;
-                }
-
-                input {
-                    width: 100%;
-                    height: 54px;
-                    padding: 0 1rem;
-                    margin-bottom: 1rem;
                 }
             }
         }

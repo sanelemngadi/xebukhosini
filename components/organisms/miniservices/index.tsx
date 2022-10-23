@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 import Button from '../../atoms/button';
-import styles from "./styles/MiniServices.module.scss";
+// import styles from "./styles/MiniServices.module.scss";
+import styles from "../../../styles/Home.module.scss";
 
 const services = ["Trauma counselling.", "Child protection services.", "Care plan services.", "Marital counselling.", "Divorce counselling."]
 const MiniServices = () => {
     return (
-        <div className={styles.box}>
-            <section className={styles.container}>
+        <div className={styles.servicesBox}>
+            <section className={styles.servicesContainer}>
                 <article>
                     <Image src='/images/worryless.jpg' width={477} height={502} alt="worry less" />
                     {/* <Image src='/images/xeImage.jpg' width={416} height={383} alt="your next social worker mr X E Bukhosini" /> */}
@@ -21,7 +22,7 @@ const MiniServices = () => {
                             </li>
                         ))}
                     </ul>
-                    <div><Button
+                    <div><Button push='/services'
                         style={{ width: "80%", height: "54px", marginTop: "24px" }}
                     >Read more services</Button></div>
                 </article>

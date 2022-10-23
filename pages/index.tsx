@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Hero from '../components/organisms/hero';
 import MiniAbout from '../components/organisms/miniabout';
 import MiniServices from '../components/organisms/miniservices';
@@ -16,9 +15,6 @@ const Home: NextPage = () => {
         image='/images/xeImage.jpg'
         path='/'
       />
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <Hero />
         <MiniAbout />

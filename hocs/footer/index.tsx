@@ -16,10 +16,10 @@ const Footer = () => {
                 <section>
                     <h3>Sipemap</h3>
                     <ul>
-                        <li><Link href="#"><a>Homepage</a></Link></li>
-                        <li><Link href="#"><a>Services</a></Link></li>
-                        <li><Link href="#"><a>About</a></Link></li>
-                        <li><Link href="#"><a>Contact</a></Link></li>
+                        <li><Link href="/" prefetch={false}><a>Homepage</a></Link></li>
+                        <li><Link href="/services" prefetch={false}><a>Services</a></Link></li>
+                        <li><Link href="/about" prefetch={false}><a>About</a></Link></li>
+                        <li><Link href="/contacts" prefetch={false}><a>Contact</a></Link></li>
                     </ul>
                 </section>
                 <section>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </section>
             </div>
             <div>
-                <p>Social Worker {date.getFullYear()} XE Bukhosin. Website Created by <b><Link href="#" passHref><a>Sanele Mngadi</a></Link></b>.</p>
+                <p>Social Worker {date.getFullYear()} XE Bukhosin. Website Created by <b><a href="https://www.sanelemngadi.com">Sanele Mngadi</a></b>.</p>
             </div>
         </footer>
     )

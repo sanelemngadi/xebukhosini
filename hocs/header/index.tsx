@@ -1,14 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import ActiveLink from '../../components/context/ActiveLink';
 import styles from "./styles/Header.module.scss";
+
+const links = ["Home", "Services", "About", "Contacts"];
+const makeHref = (name: string) => {
+    return `/${name === "Home" ? "" : name.toLowerCase()}`;
+}
 
 const Navbar = () => {
     return (
         <div className={styles.appbar}>
             <header>
                 <div className={styles.logo}>
-                    <Link href="#" passHref>
+                    <Link href="/" passHref>
                         <a>
                             <Image
                                 src='/vectors/xeLogo.svg'
@@ -29,10 +35,14 @@ const Navbar = () => {
                 />
                 <nav className={styles.nav}>
                     <ul>
-                        <li><Link href="/"><a>Home</a></Link></li>
-                        <li><Link href="#"><a>Services</a></Link></li>
-                        <li><Link href="/about"><a>About</a></Link></li>
-                        <li><Link href="/contacts"><a>Contact</a></Link></li>
+                        {links.map((link, idx) => (
+                            <ActiveLink
+                                key={"link-" + idx}
+                                link={link}
+                                href={makeHref(link)}
+                            />
+                        ))}
+
                     </ul>
                 </nav>
 

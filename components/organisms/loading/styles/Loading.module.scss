@@ -1,0 +1,100 @@
+@import "../../../../styles/abstract/mixins";
+@import "../../../../styles/abstract/variables";
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    @include center();
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: $accent-color;
+    color: $blue0;
+
+    h3 {
+        font-size: 64px;
+    }
+
+    section {
+        position: relative;
+        overflow: hidden;
+        padding: 1rem;
+
+        h3 {
+            font-family: $font-primary;
+
+            span {
+                display: inline-block;
+                width: 10px;
+                height: 35px;
+                background-color: $blue0;
+                margin: 0 .3rem;
+
+                @include psuedo($content: "", $side: before) {
+                    width: 11px;
+                    height: 11px;
+                    background-color: black;
+                    top: -16px;
+                    border-radius: 50%;
+                    background-color: inherit;
+                    left: 0;
+                }
+
+                &:first-of-type::before {
+                    animation: loading1 0.5s cubic-bezier(0.48, -0.49, 0.08, 1.56) alternate infinite;
+                }
+
+                &:last-of-type::before {
+                    animation: loading2 0.5s 0.3s cubic-bezier(0.48, -0.49, 0.08, 1.56) alternate infinite;
+                }
+
+                @keyframes loading1 {
+                    0% {
+                        top: -16px;
+                    }
+
+                    100% {
+                        top: -24px;
+                    }
+                }
+
+                @keyframes loading2 {
+                    0% {
+                        top: -16px;
+                    }
+
+                    100% {
+                        top: -24px;
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 20px;
+
+            @include psuedo($content: "", $side: after) {
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                animation: dots 0.5s 0.3s linear alternate infinite;
+            }
+        }
+    }
+
+
+    @keyframes dots {
+        10% {
+            content: ".";
+        }
+
+        50% {
+            content: "..";
+        }
+
+        100% {
+            content: "...";
+        }
+    }
+}

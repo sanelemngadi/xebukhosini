@@ -1,9 +1,7 @@
-@import "../../../../styles//abstract/mixins";
-@import "../../../../styles//abstract/variables";
+// @import "../../../../styles//abstract/mixins";
+// @import "../../../../styles//abstract/variables";
 
-.box {
-    // min-height: 100vh;
-    // border: 1px solid black;
+.servicesBox {
     background-color: $primary-color;
     padding: 64px 1rem;
     margin-top: 32px;
@@ -17,7 +15,7 @@
     }
 }
 
-.container {
+.servicesContainer {
     max-width: 1200px;
     margin: 0 auto;
 
@@ -69,8 +67,6 @@
         }
 
         ul {
-            // height: 100%;
-
             li {
                 color: #565656;
                 padding: 0.8rem;

@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 import Button from '../../atoms/button';
-import styles from "./styles/Vision.module.scss";
+// import styles from "./styles/Vision.module.scss";
+import styles from "../../../styles/Home.module.scss";
 
 const VisionMission = () => {
     return (
-        <div className={styles.box}>
-            <section className={styles.container}>
+        <div className={styles.missionBox}>
+            <section className={styles.missionContainer}>
                 <article>
                     <h1>It&apos;s my dream to see you helping yourself.</h1>
                 </article>
@@ -33,7 +34,6 @@ const VisionMission = () => {
                                     src='/images/mission.jpg'
                                     width={395}
                                     height={256}
-                                    // layout="fill"
                                     objectFit='cover'
                                     alt="our mission is to enhance the social function of individuals through provision of social work services."
                                 />
@@ -46,7 +46,7 @@ const VisionMission = () => {
                         </section>
                     </article>
                 </section>
-                <div><Button>Book an appointment</Button></div>
+                <div><Button push='/contacts'>Book an appointment</Button></div>
             </section>
         </div >
     )

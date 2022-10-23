@@ -1,11 +1,11 @@
-@import "../../../../styles/abstract/mixins";
-@import "../../../../styles/abstract/variables";
+// @import "../../../../styles/abstract/mixins";
+// @import "../../../../styles/abstract/variables";
 
-.box {
+.missionBox {
     min-height: 100vh;
 }
 
-.container {
+.missionContainer {
     max-width: 900px;
     margin: 0 auto;
     padding: 114px 1rem 128px 1rem;

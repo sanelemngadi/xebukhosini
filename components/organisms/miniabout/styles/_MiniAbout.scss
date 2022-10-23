@@ -1,7 +1,7 @@
-@import "../../../../styles/abstract/mixins";
-@import "../../../../styles/abstract/variables";
+// @import "../../../../styles/abstract/mixins";
+// @import "../../../../styles/abstract/variables";
 
-.box {
+.aboutBox {
     min-height: 100vh;
     padding: 54px 1rem 26px 1rem;
 
@@ -10,7 +10,7 @@
     }
 }
 
-.container {
+.aboutContainer {
     max-width: 1200px;
     margin: 0 auto;
 

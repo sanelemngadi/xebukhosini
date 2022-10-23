@@ -36,6 +36,7 @@
     margin-bottom: 64px;
     @include center();
     flex-direction: column;
+    margin-top: -2px;
 
     h1 {
         font-size: 32px;

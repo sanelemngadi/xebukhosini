@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../atoms/button';
-import styles from "./styles/Hero.module.scss";
+import styles from "../../../styles/Home.module.scss";
 
 const Hero = () => {
     return (
@@ -14,4 +14,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Hero;
