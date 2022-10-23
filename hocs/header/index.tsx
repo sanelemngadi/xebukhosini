@@ -29,17 +29,12 @@ const Navbar = () => {
                 />
                 <nav className={styles.nav}>
                     <ul>
-                        <li><Link href="#"><a style={{ fontWeight: 700 }}>Home</a></Link></li>
+                        <li><Link href="/"><a>Home</a></Link></li>
                         <li><Link href="#"><a>Services</a></Link></li>
-                        <li><Link href="#"><a>About</a></Link></li>
-                        <li><Link href="#"><a>Contact</a></Link></li>
+                        <li><Link href="/about"><a>About</a></Link></li>
+                        <li><Link href="/contacts"><a>Contact</a></Link></li>
                     </ul>
                 </nav>
-
-                <label htmlFor="menu" className={styles.menu}>
-                    <span></span>
-                    <span></span>
-                </label>
 
             </header>
         </div>

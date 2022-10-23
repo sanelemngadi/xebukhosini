@@ -1,0 +1,31 @@
+@import "../../../../styles/abstract/mixins";
+@import "../../../../styles/abstract/variables";
+
+.card {
+    min-height: 10vh;
+    margin-top: 4rem;
+
+    &:first-of-type {
+        margin-top: 1rem;
+    }
+
+
+    @include mq(sm) {
+        margin-top: 6rem;
+        display: flex;
+        gap: 2rem;
+
+        p,
+        div {
+            flex: 1;
+        }
+
+        &:nth-of-type(2) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @include mq(md) {
+        margin: 8rem 0;
+    }
+}

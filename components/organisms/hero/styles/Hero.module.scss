@@ -2,17 +2,22 @@
 @import "../../../../styles/abstract/variables";
 
 .hero {
-    min-height: calc(100vh - 80px);
+    // min-height: calc(100vh - 80px);
     background-color: $blue0;
     overflow: hidden;
     padding: 0 1rem;
 
     section {
         @include center(column);
-        min-height: calc(100vh - 80px);
+        min-height: calc(100vh - 80px - 24px - 32px);
         height: 100%;
         max-width: 1200px;
         margin: 0 auto;
+
+        @include mq(sm) {
+            min-height: calc(100vh - 80px);
+
+        }
 
         p {
             font-size: 20px;
@@ -28,7 +33,7 @@
             font-weight: 400 !important;
             max-width: 645px;
             text-align: center;
-            margin-bottom: 148px;
+            margin-bottom: 80px;
             margin-top: 16px;
         }
 
@@ -42,6 +47,10 @@
                 margin-bottom: 89px;
                 margin-top: 16px;
             }
+        }
+
+        button {
+            padding: 0rem .5rem;
         }
     }
 }

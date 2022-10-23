@@ -21,7 +21,9 @@ const MiniServices = () => {
                             </li>
                         ))}
                     </ul>
-                    <div><Button style={{ width: "80%", height: "54px", marginTop: "24px" }}>Read more services</Button></div>
+                    <div><Button
+                        style={{ width: "80%", height: "54px", marginTop: "24px" }}
+                    >Read more services</Button></div>
                 </article>
             </section>
         </div>

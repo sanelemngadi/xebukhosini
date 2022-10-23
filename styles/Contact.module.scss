@@ -1,0 +1,156 @@
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+.box {
+    min-height: 100vh;
+    padding-bottom: 96px;
+
+    span p {
+        font-size: 48px;
+        font-family: $font-secondary;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.hero {
+    background-color: $blue0;
+    height: calc(100vh * (9/16));
+    padding: 1rem;
+    margin-bottom: 64px;
+    @include center();
+    flex-direction: column;
+
+    h1 {
+        font-size: 32px;
+        max-width: 780px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 400;
+
+        @include mq(sm) {
+            font-size: 48px;
+        }
+    }
+
+    div {
+        display: flex;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 96px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
+
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &>section {
+        text-align: center;
+
+        @include mq(sm) {
+            display: flex;
+            text-align: left;
+            gap: 2rem;
+            margin-top: 2rem;
+
+            article {
+                flex: 1;
+            }
+        }
+
+        h3 {
+            font-size: 48px;
+            margin-top: 2rem;
+            font-weight: 400;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            max-width: 700px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 200%;
+
+            &:last-of-type {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include mq(sm) {
+            section {
+                display: flex;
+            }
+        }
+
+        &>article:last-of-type {
+            &:last-of-type {
+                text-align: left;
+
+                @include mq(sm) {
+                    background-color: $blue0;
+                    padding: 1rem;
+                }
+
+                input,
+                label {
+                    display: block;
+                }
+
+                select,
+                option,
+                label,
+                textarea,
+                input {
+                    font-family: $font-primary;
+                    font-size: 16px;
+                }
+
+                label {
+                    margin-top: 1rem;
+                    margin-bottom: .3rem;
+                    @include ssrOnly();
+                }
+
+                select {
+                    width: 100%;
+                    height: 54px;
+                    padding: 0 1rem;
+                    margin-bottom: 1rem;
+                }
+
+
+                textarea {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                input {
+                    width: 100%;
+                    height: 54px;
+                    padding: 0 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    &>div {
+        height: 100vh;
+        max-height: calc(100vh * (9/16));
+        border: 1px solid blue;
+        @include center();
+        margin-top: 4rem;
+    }
+}

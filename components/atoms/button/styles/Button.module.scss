@@ -1,9 +1,10 @@
 @import "../../../../styles//abstract/mixins";
+@import "../../../../styles//abstract/variables";
 
 .button {
     border: 1px solid transparent;
     height: 56px;
-    padding: 0 2rem;
+    padding: 0 1rem;
     width: 80%;
     background-color: $accent-color;
     color: $primary-color;

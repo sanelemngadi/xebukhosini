@@ -1,0 +1,63 @@
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+.box {
+    min-height: 100vh;
+    padding-bottom: 96px;
+
+    span p {
+        font-size: 48px;
+        font-family: $font-secondary;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+        line-height: 190%;
+        font-size: 18px;
+
+        @include mq(sm) {
+            line-height: 207%;
+            font-size: 20px;
+        }
+    }
+}
+
+.hero {
+    background-color: $blue0;
+    height: calc(100vh * (9/16));
+    padding: 1rem;
+    margin-bottom: 64px;
+    @include center();
+    flex-direction: column;
+
+    h1 {
+        font-size: 32px;
+        max-width: 780px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 400;
+
+        @include mq(sm) {
+            font-size: 48px;
+        }
+    }
+
+    div {
+        display: flex;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 96px;
+
+        a {
+            font-weight: bold;
+        }
+    }
+}
