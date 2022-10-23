@@ -10,7 +10,7 @@ import Footer from '../hocs/footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleStart = () => setIsLoading(true);
@@ -28,6 +28,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeError", handleComplete);
     }
   }, [router.events]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [])
   return (
     <>
       <Head>
