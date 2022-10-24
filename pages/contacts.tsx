@@ -47,9 +47,9 @@ const Contacts = () => {
                         </article>
                     </section>
 
-                    <div>
+                    {/* <div>
                         Map
-                    </div>
+                    </div> */}
 
                 </section>
             </div>

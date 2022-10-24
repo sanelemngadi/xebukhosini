@@ -13,16 +13,16 @@ const MetaData: FC<Props> = ({ title, subtitle, image, path }) => {
     return (
         <Head>
             <title>{title}</title>
-            <link rel="canonical" href={`https://www.xolanibukhosini.co.za${path}`} />
+            <link rel="canonical" href={`https://xolanibukhosini.co.za${path}`} />
             <meta name="description" content={subtitle} />
 
             <meta property="og:locale" content="en_US" />
-            <meta property="og:type" content="article" />
+            {/* <meta property="og:type" content="article" /> */}
             <meta property='og:title' content={title} />
             <meta property='og:description' content={subtitle} />
-            <meta property='og:image' content={"https://www.xolanibukhosini.co.za" + image} />
+            <meta property='og:image' content={`https://xolanibukhosini.co.za${path}`} />
             <meta property="og:type" content="Social worker in private practice" />
-            <meta property="og:url" content={`https://www.xolanibukhosini.co.za${path}`} />
+            <meta property="og:url" content={`https://xolanibukhosini.co.za${path}`} />
 
             <meta property="og:site_name" content="xolanibukhosini" />
             <meta property="og:updated_time" content={date.toDateString().replaceAll(" ", "-")} />
@@ -33,7 +33,7 @@ const MetaData: FC<Props> = ({ title, subtitle, image, path }) => {
             <meta property='twitter:title' content={title} />
             <meta property='twitter:description' content={subtitle} />
             <meta name="twitter:card" content="summary_large_image" />
-            <meta property='twitter:image' content={"https://www.xolanibukhosini.co.za" + image} />
+            <meta property='twitter:image' content={`https://xolanibukhosini.co.za${path}`} />
         </Head>
     )
 }
