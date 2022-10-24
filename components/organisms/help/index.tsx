@@ -7,7 +7,7 @@ const WhatsappHelp = () => {
             height: "3rem",
             border: "1px solid #9da6d3",
             position: "fixed",
-            bottom: "5rem",
+            bottom: "8rem",
             right: "2rem",
             backgroundColor: "#BCC4ED",
             zIndex: 10,

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.xolanibukhosini.co.za
+
+# Sitemaps
+Sitemap: https://www.xolanibukhosini.co.za/sitemap.xml

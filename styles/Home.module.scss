@@ -1,8 +1,11 @@
 @import "abstract/mixins";
+@import "abstract/variables";
 
 .errorPage {
   height: 100vh;
   @include center();
+  background-color: $accent-color;
+  color: $blue0;
 
   section {
     @include center();

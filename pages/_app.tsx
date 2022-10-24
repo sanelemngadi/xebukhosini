@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://xolanibukhosini.netlify.app/images/xeImage.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://xolanibukhosini.co.za/vectors/xeSubLogo.svg" />
       </Head>
       <Navbar />
       {isLoading && <PageLoading />}
