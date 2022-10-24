@@ -4,7 +4,7 @@ import Button from '../../atoms/button';
 // import styles from "./styles/MiniServices.module.scss";
 import styles from "../../../styles/Home.module.scss";
 
-const services = ["Trauma counselling.", "Child protection services.", "Care plan services.", "Marital counselling.", "Divorce counselling."]
+const services = ["Trauma counselling.", "Psychosocial support services.", "Family preservation services.", "Child protection services.", "Care plan services.", "Marital counselling.", "Family therapy.", "Divorce counselling."]
 const MiniServices = () => {
     return (
         <div className={styles.servicesBox}>
@@ -22,9 +22,9 @@ const MiniServices = () => {
                             </li>
                         ))}
                     </ul>
-                    <div><Button push='/services'
+                    <div><Button push='/contacts'
                         style={{ width: "80%", height: "54px", marginTop: "24px" }}
-                    >Read more services</Button></div>
+                    >Book appointment</Button></div>
                 </article>
             </section>
         </div>

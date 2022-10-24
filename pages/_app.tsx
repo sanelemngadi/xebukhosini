@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import PageLoading from '../components/organisms/loading';
 import Footer from '../hocs/footer';
+import WhatsappHelp from '../components/organisms/help';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       {isLoading && <PageLoading />}
       <Component {...pageProps} />
+      <WhatsappHelp />
       <Footer />
     </>
   )

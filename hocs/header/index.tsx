@@ -4,7 +4,7 @@ import React from 'react';
 import ActiveLink from '../../components/context/ActiveLink';
 import styles from "./styles/Header.module.scss";
 
-const links = ["Home", "Services", "About", "Contacts"];
+const links = ["Home", "About", "Contacts"];
 const makeHref = (name: string) => {
     return `/${name === "Home" ? "" : name.toLowerCase()}`;
 }
@@ -51,4 +51,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;

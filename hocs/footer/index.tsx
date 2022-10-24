@@ -9,7 +9,7 @@ const Footer = () => {
             <div className={styles.container}>
                 <section>
                     <h3>XE Bukhosini</h3>
-                    <p>© {date.getFullYear()} Xolani Bukhosini</p>
+                    <p>© 2022  {date.getFullYear() === 2022 ? "" : " - " + date.getFullYear()} Xolani Bukhosini</p>
                     <p>Private Social Worker</p>
                     <p>101, York street, Greytown</p>
                 </section>

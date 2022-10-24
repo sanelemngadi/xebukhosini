@@ -15,6 +15,9 @@ const MetaData: FC<Props> = ({ title, subtitle, image, path }) => {
             <title>{title}</title>
             <link rel="canonical" href={`https://xolanibukhosini.netlify.app${path}`} />
             <meta name="description" content={subtitle} />
+
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="article" />
             <meta property='og:title' content={title} />
             <meta property='og:description' content={subtitle} />
             <meta property='og:image' content={"https://xolanibukhosini.netlify.app" + image} />
@@ -29,6 +32,7 @@ const MetaData: FC<Props> = ({ title, subtitle, image, path }) => {
             {/* Twitter meta card  */}
             <meta property='twitter:title' content={title} />
             <meta property='twitter:description' content={subtitle} />
+            <meta name="twitter:card" content="summary_large_image" />
             <meta property='twitter:image' content={"https://xolanibukhosini.netlify.app" + image} />
         </Head>
     )
