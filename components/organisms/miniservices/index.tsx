@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import Button from '../../atoms/button';
-// import styles from "./styles/MiniServices.module.scss";
 import styles from "../../../styles/Home.module.scss";
 
 const services = ["Trauma counselling.", "Psychosocial support services.", "Family preservation services.", "Child protection services.", "Care plan services.", "Marital counselling.", "Family therapy.", "Divorce counselling."]
@@ -22,7 +21,7 @@ const MiniServices = () => {
                             </li>
                         ))}
                     </ul>
-                    <div><Button push='/contacts'
+                    <div><Button push='/contacts/'
                         style={{ width: "80%", height: "54px", marginTop: "24px" }}
                     >Book appointment</Button></div>
                 </article>

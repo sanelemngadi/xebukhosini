@@ -17,9 +17,8 @@ const Footer = () => {
                     <h3>Sipemap</h3>
                     <ul>
                         <li><Link href="/" prefetch={false}><a>Homepage</a></Link></li>
-                        <li><Link href="/services" prefetch={false}><a>Services</a></Link></li>
-                        <li><Link href="/about" prefetch={false}><a>About</a></Link></li>
-                        <li><Link href="/contacts" prefetch={false}><a>Contact</a></Link></li>
+                        <li><Link href="/about/" prefetch={false}><a>About</a></Link></li>
+                        <li><Link href="/contacts/" prefetch={false}><a>Contact</a></Link></li>
                     </ul>
                 </section>
                 <section>

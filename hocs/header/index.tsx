@@ -6,7 +6,7 @@ import styles from "./styles/Header.module.scss";
 
 const links = ["Home", "About", "Contacts"];
 const makeHref = (name: string) => {
-    return `/${name === "Home" ? "" : name.toLowerCase()}`;
+    return `/${name === "Home" ? "" : `${name.toLowerCase()}/`}`;
 }
 
 const Navbar = () => {

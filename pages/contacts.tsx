@@ -11,7 +11,7 @@ const Contacts = () => {
                 title='Contact | Private Social Worker - I am more than happy to answer your questions.'
                 subtitle='I am registered as a social worker with south African council for social services profession (registration No 10-26588). worked for the Department of Social Development for 8 years as both generic social worker and supervisor.'
                 image='/images/xeImage.jpg'
-                path='/contacts'
+                path='/contacts/'
             />
             <div >
                 <div className={styles.hero}>

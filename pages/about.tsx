@@ -12,7 +12,7 @@ const About = () => {
                 title='About | Social worker in private practice in graytown - A registered and accredited social worker with over 14 years of experience.'
                 subtitle='I have a clear understanding of social work methods. I can render services independently and professional. I am guided by social work principles and ethics.'
                 image='/images/xeImage.jpg'
-                path='/about'
+                path='/about/'
             />
             <div >
                 <div className={styles.hero}>
