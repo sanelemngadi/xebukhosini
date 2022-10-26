@@ -9,7 +9,7 @@ const VisionMission = () => {
         <div className={styles.missionBox}>
             <section className={styles.missionContainer}>
                 <article>
-                    <h1>It&apos;s my dream to see you helping yourself.</h1>
+                    <h2>It&apos;s my dream to see you helping yourself.</h2>
                 </article>
                 <section>
                     <article className={styles.vision}>
@@ -22,7 +22,7 @@ const VisionMission = () => {
                                 />
                             </article>
                             <article>
-                                <h2>Our vision</h2>
+                                <h3>Our vision</h3>
                                 <p>To build the world where everyone is able to help themselves in any situation..</p>
                             </article>
                         </section>
@@ -40,7 +40,7 @@ const VisionMission = () => {
 
                             </article>
                             <article>
-                                <h2>Our mission</h2>
+                                <h3>Our mission</h3>
                                 <p>To  enhance the social function of individuals, families and group through provision of social work services in private practise.</p>
                             </article>
                         </section>

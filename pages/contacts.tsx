@@ -2,11 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 import ContactForm from '../components/organisms/contactform';
 import MetaData from '../meta';
-import styles from "../styles/Contact.module.scss";
+import styles from "../styles/Home.module.scss";
 
 const Contacts = () => {
     return (
-        <div className={styles.box}>
+        <div className={styles.contactBox}>
             <MetaData
                 title='Contact | Private Social Worker - I am more than happy to answer your questions.'
                 subtitle='I am registered as a social worker with south African council for social services profession (registration No 10-26588). worked for the Department of Social Development for 8 years as both generic social worker and supervisor.'
@@ -14,7 +14,7 @@ const Contacts = () => {
                 path='/contacts'
             />
             <div >
-                <div className={styles.hero}>
+                <div className={styles.contactHero}>
                     <h1>I am more than happy to answer your questions.</h1>
                     <div>
                         <Link href="/"><a>Home</a></Link>
@@ -23,7 +23,7 @@ const Contacts = () => {
                     </div>
                 </div>
 
-                <section className={styles.container}>
+                <section className={styles.contactContainer}>
                     <span><p>Contacts</p></span>
                     <section>
                         <article>

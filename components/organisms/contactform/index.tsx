@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import styles from "./styles/Form.module.scss";
+import React, { useState } from 'react';
+import styles from "../../../styles/Home.module.scss";
 
 const ContactForm = () => {
     const time = new Date();
@@ -48,7 +48,7 @@ const ContactForm = () => {
 
     }
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={styles.contactform} onSubmit={handleSubmit}>
             <label htmlFor="name">Name</label>
             <input
                 type="text"

@@ -3,11 +3,11 @@ import Link from 'next/link';
 import React from 'react';
 import ImageText from '../components/molecules/imagetext';
 import MetaData from '../meta';
-import styles from "../styles/About.module.scss";
+import styles from "../styles/Home.module.scss";
 
 const About = () => {
     return (
-        <div className={styles.box}>
+        <div className={styles.aboutBox}>
             <MetaData
                 title='About | Social worker in private practice in graytown - A registered and accredited social worker with over 14 years of experience.'
                 subtitle='I have a clear understanding of social work methods. I can render services independently and professional. I am guided by social work principles and ethics.'
@@ -15,7 +15,7 @@ const About = () => {
                 path='/about'
             />
             <div >
-                <div className={styles.hero}>
+                <div className={styles.aboutHero}>
                     <h1>A registered and accredited social worker with over 14  years of experience.</h1>
                     <div>
                         <Link href="/"><a>Home</a></Link>
@@ -24,7 +24,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <section className={styles.container}>
+                <section className={styles.aboutContainer}>
                     <span><p>Hi again</p></span>
                     <ImageText>
                         <p>My name is Xolani Bukhosini, potentially your next social worker. I offer a private social work service. I have a degree in social worker that I obtained in the University of Zululand. I am registered as a private social worker (Practice No: 9990890000825050).</p>

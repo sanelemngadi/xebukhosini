@@ -49,7 +49,7 @@
     }
 
     article {
-        h1 {
+        h2 {
             font-size: 32px;
             margin-top: 64px;
             font-weight: 400;
@@ -80,7 +80,7 @@
         }
 
         @include mq(sm) {
-            h1 {
+            h2 {
                 font-size: 36px; //
                 text-align: left; //
                 margin-bottom: 24px; //

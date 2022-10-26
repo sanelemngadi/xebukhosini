@@ -1,7 +1,4 @@
-@import "./abstract/mixins";
-@import "./abstract/variables";
-
-.box {
+.contactBox {
     min-height: 100vh;
     padding-bottom: 96px;
 
@@ -13,7 +10,7 @@
     }
 }
 
-.hero {
+.contactHero {
     background-color: $blue0;
     height: calc(100vh * (9/16));
     padding: 1rem;
@@ -47,7 +44,7 @@
     }
 }
 
-.container {
+.contactContainer {
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;

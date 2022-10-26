@@ -1,7 +1,7 @@
 // @import "../../../../styles/abstract/mixins";
 // @import "../../../../styles/abstract/variables";
 
-.aboutBox {
+.miniAboutBox {
     min-height: 100vh;
     padding: 54px 1rem 26px 1rem;
 
@@ -10,7 +10,7 @@
     }
 }
 
-.aboutContainer {
+.miniAboutContainer {
     max-width: 1200px;
     margin: 0 auto;
 
@@ -36,7 +36,7 @@
     }
 
     article {
-        h1 {
+        h2 {
             font-size: 32px;
             margin-top: 64px;
             font-weight: 400;
@@ -64,7 +64,7 @@
         }
 
         @include mq(sm) {
-            h1 {
+            h2 {
                 font-size: 36px; //
                 text-align: left; //
                 margin-bottom: 24px; //

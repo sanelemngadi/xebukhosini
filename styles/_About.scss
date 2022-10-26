@@ -1,7 +1,4 @@
-@import "./abstract/mixins";
-@import "./abstract/variables";
-
-.box {
+.aboutBox {
     min-height: 100vh;
     padding-bottom: 96px;
 
@@ -13,7 +10,7 @@
     }
 }
 
-.container {
+.aboutContainer {
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -29,7 +26,7 @@
     }
 }
 
-.hero {
+.aboutHero {
     background-color: $blue0;
     height: calc(100vh * (9/16));
     padding: 1rem;

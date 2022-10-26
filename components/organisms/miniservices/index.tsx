@@ -10,10 +10,9 @@ const MiniServices = () => {
             <section className={styles.servicesContainer}>
                 <article>
                     <Image src='/images/worryless.jpg' width={477} height={502} alt="worry less" />
-                    {/* <Image src='/images/xeImage.jpg' width={416} height={383} alt="your next social worker mr X E Bukhosini" /> */}
                 </article>
                 <article>
-                    <h1>I render a rage of private social work services.</h1>
+                    <h2>I render a rage of private social work services.</h2>
                     <ul>
                         {services.map((service, idx) => (
                             <li key={`service-` + idx}>

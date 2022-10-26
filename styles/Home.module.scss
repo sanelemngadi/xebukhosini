@@ -29,6 +29,12 @@
 
 ;
 
+/**************Image Text section**********/
+@import "../components/molecules/imagetext/styles/ImageText";
+
+/**************Contact form section**********/
+@import "../components/organisms/contactform/styles/ContactForm";
+
 /**************Hero section**********/
 @import "../components/organisms/hero/styles/hero";
 
@@ -41,3 +47,9 @@
 
 /**************Mission Vision section**********/
 @import "../components/organisms/visionmission/styles/Vision";
+
+/**************Contact Page**********/
+@import "Contact";
+
+/**************About Page**********/
+@import "About";

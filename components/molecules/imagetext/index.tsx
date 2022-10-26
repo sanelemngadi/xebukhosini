@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./styles/ImageText.module.scss";
+import styles from "../../../styles/Home.module.scss";
 
 interface Props {
     children: React.ReactNode,
@@ -7,7 +7,7 @@ interface Props {
 
 const ImageText: React.FC<Props> = ({ children }) => {
     return (
-        <article className={styles.card}>
+        <article className={styles.imageTextCard}>
             {children}
         </article>
     )
