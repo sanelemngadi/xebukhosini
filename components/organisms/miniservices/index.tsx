@@ -21,7 +21,7 @@ const MiniServices = () => {
                             </li>
                         ))}
                     </ul>
-                    <div><Button push='/contacts/'
+                    <div><Button push='/contacts'
                         style={{ width: "80%", height: "54px", marginTop: "24px" }}
                     >Book appointment</Button></div>
                 </article>

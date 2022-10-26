@@ -17,13 +17,13 @@ const Footer = () => {
                     <h3>Sipemap</h3>
                     <ul>
                         <li><Link href="/" prefetch={false}><a>Homepage</a></Link></li>
-                        <li><Link href="/about/" prefetch={false}><a>About</a></Link></li>
-                        <li><Link href="/contacts/" prefetch={false}><a>Contact</a></Link></li>
+                        <li><Link href="/about" prefetch={false}><a>About</a></Link></li>
+                        <li><Link href="/contacts" prefetch={false}><a>Contact</a></Link></li>
                     </ul>
                 </section>
                 <section>
                     <h3>Contact</h3>
-                    <p>xolanibukhosini@gmail.com</p>
+                    <p>private.socialworker{/* xe bukhosini email */}@xolanibukhosini.co.za</p>
                     <p>0724894604</p>
 
                     <h3>Office hours</h3>

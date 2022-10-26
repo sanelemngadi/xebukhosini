@@ -12,7 +12,7 @@ const About = () => {
                 title='About | Social worker in private practice in graytown - A registered and accredited social worker with over 14 years of experience.'
                 subtitle='I have a clear understanding of social work methods. I can render services independently and professional. I am guided by social work principles and ethics.'
                 image='/images/xeImage.jpg'
-                path='/about/'
+                path='/about'
             />
             <div >
                 <div className={styles.hero}>
@@ -29,7 +29,7 @@ const About = () => {
                     <ImageText>
                         <p>My name is Xolani Bukhosini, potentially your next social worker. I offer a private social work service. I have a degree in social worker that I obtained in the University of Zululand. I am registered as a private social worker (Practice No: 9990890000825050).</p>
                         <div>
-                            <Image src="/images/books.jpg" width={577} height={316} alt="books" />
+                            <Image src="/images/univ.jpg" width={577} height={316} alt="university books" />
                         </div>
                     </ImageText>
                     <ImageText>

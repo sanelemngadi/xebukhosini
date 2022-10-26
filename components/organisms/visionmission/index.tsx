@@ -46,7 +46,7 @@ const VisionMission = () => {
                         </section>
                     </article>
                 </section>
-                <div><Button push='/contacts/'>Book an appointment</Button></div>
+                <div><Button push='/contacts'>Book an appointment</Button></div>
             </section>
         </div >
     )

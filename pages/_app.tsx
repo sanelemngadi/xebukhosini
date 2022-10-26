@@ -40,7 +40,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://xolanibukhosini.co.za/vectors/xeSubLogo.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.xolanibukhosini.co.za/vectors/xeSubLogo.svg" />
+        <meta name="keywords" content="Private social worker in Greytown, Social worker in private Pactice,Trauma counselling, Psychosocial support services, Family preservation services, Child protection services, Care plan services, Marital counselling, Family therapy, Divorce counselling, Xolani Bukhosini" />
       </Head>
       <Navbar />
       {isLoading && <PageLoading />}
